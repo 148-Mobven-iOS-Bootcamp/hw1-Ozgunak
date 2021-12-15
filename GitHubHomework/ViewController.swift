@@ -7,20 +7,39 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBOutlet weak var bmiLabel: UILabel!
     @IBOutlet weak var heightLabel: UITextField!
     @IBOutlet weak var weightLabel: UITextField!
-    @IBOutlet weak var heightLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        heightLabel.delegate = self
+        weightLabel.delegate = self
     }
 
     @IBAction func buttonTapped(_ sender: UIButton) {
-        
+        weightLabel.endEditing(true)
+        heightLabel.endEditing(true)
     }
     
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        weightLabel.endEditing(true)
+        heightLabel.endEditing(true)
+        return true
+    }
+    
+    func textFieldShouldEndEditing(_ textField: UITextField) -> Bool {
+        if weightLabel.text != "" && heightLabel.text != "" {
+            return true
+        }else{
+            return true
+        }
+    }
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        print("end text")
+    }
 }
 

@@ -17,10 +17,9 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7H5-qN-DKs">
-                                <rect key="frame" x="107" y="612" width="200" height="100"/>
+                                <rect key="frame" x="107" y="451" width="200" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="UBg-63-XaQ"/>
-                                    <constraint firstAttribute="width" constant="200" id="iXa-9U-Icm"/>
+                                    <constraint firstAttribute="height" constant="100" id="Uy6-hI-cGU"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
@@ -29,43 +28,43 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="XZq-x0-lhg">
-                                <rect key="frame" x="143" y="124" width="128" height="199"/>
+                                <rect key="frame" x="30" y="124" width="354" height="199"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boyunuzu Giriniz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meR-aQ-xhh">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sDO-PG-cYz">
-                                        <rect key="frame" x="0.0" y="50.5" width="128" height="34"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sDO-PG-cYz">
+                                        <rect key="frame" x="0.0" y="50.5" width="354" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" textContentType="flight-number"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kilonuzu Giriniz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0z-vj-Dcs">
-                                        <rect key="frame" x="0.0" y="114.5" width="128" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="114.5" width="354" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KwK-DU-e1C">
-                                        <rect key="frame" x="0.0" y="165" width="128" height="34"/>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0.0" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KwK-DU-e1C">
+                                        <rect key="frame" x="0.0" y="165" width="354" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ELD-x9-0p3">
-                                <rect key="frame" x="142.5" y="423" width="129" height="20.5"/>
+                                <rect key="frame" x="30" y="361" width="354" height="20.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BMI oranınız:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pv4-hV-6f8">
-                                        <rect key="frame" x="0.0" y="0.0" width="98.5" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="323.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ac-Bh-ud6">
-                                        <rect key="frame" x="118.5" y="0.0" width="10.5" height="20.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" showsExpansionTextWhenTruncated="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5ac-Bh-ud6">
+                                        <rect key="frame" x="343.5" y="0.0" width="10.5" height="20.5"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -76,12 +75,15 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGreenColor"/>
                         <constraints>
-                            <constraint firstItem="ELD-x9-0p3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8sp-Iz-AOL"/>
+                            <constraint firstItem="ELD-x9-0p3" firstAttribute="centerX" secondItem="7H5-qN-DKs" secondAttribute="centerX" id="8Wo-0e-LrN"/>
+                            <constraint firstItem="7H5-qN-DKs" firstAttribute="top" secondItem="ELD-x9-0p3" secondAttribute="bottom" constant="69.5" id="FvD-LF-eKo"/>
+                            <constraint firstItem="ELD-x9-0p3" firstAttribute="trailing" secondItem="XZq-x0-lhg" secondAttribute="trailing" id="MW2-Ev-KlO"/>
                             <constraint firstItem="XZq-x0-lhg" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xn4-aB-JTT"/>
-                            <constraint firstItem="7H5-qN-DKs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZJv-oU-erR"/>
                             <constraint firstItem="XZq-x0-lhg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="c1g-fS-pXn"/>
-                            <constraint firstItem="ELD-x9-0p3" firstAttribute="top" secondItem="XZq-x0-lhg" secondAttribute="bottom" constant="100" id="ldC-2N-npO"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7H5-qN-DKs" secondAttribute="bottom" constant="150" id="qYe-j5-GXf"/>
+                            <constraint firstItem="ELD-x9-0p3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="fes-6o-t0I"/>
+                            <constraint firstItem="ELD-x9-0p3" firstAttribute="top" secondItem="XZq-x0-lhg" secondAttribute="bottom" constant="38" id="ory-QQ-Ib5"/>
+                            <constraint firstItem="7H5-qN-DKs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="107" id="qNE-X0-fWg"/>
+                            <constraint firstItem="ELD-x9-0p3" firstAttribute="centerX" secondItem="XZq-x0-lhg" secondAttribute="centerX" id="v9o-K0-QZc"/>
                         </constraints>
                     </view>
                     <connections>
