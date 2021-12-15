@@ -24,6 +24,7 @@
 		EF3C4896276A045B00AE8829 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EF3C4899276A045B00AE8829 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EF3C489B276A045B00AE8829 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EF3C48A3276A410800AE8829 /* FibonacciHomework.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = FibonacciHomework.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +41,7 @@
 		EF3C4881276A045700AE8829 = {
 			isa = PBXGroup;
 			children = (
+				EF3C48A3276A410800AE8829 /* FibonacciHomework.playground */,
 				EF3C488C276A045700AE8829 /* GitHubHomework */,
 				EF3C488B276A045700AE8829 /* Products */,
 			);
