@@ -17,10 +17,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7H5-qN-DKs">
-                                <rect key="frame" x="107" y="612" width="200" height="100"/>
+                                <rect key="frame" x="173.5" y="612" width="67" height="100"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="UBg-63-XaQ"/>
-                                    <constraint firstAttribute="width" constant="200" id="iXa-9U-Icm"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="iXa-9U-Icm"/>
                                 </constraints>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Button"/>
@@ -29,34 +29,58 @@
                                 </connections>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="XZq-x0-lhg">
-                                <rect key="frame" x="143" y="124" width="128" height="199"/>
+                                <rect key="frame" x="30" y="124" width="354" height="191"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Boyunuzu Giriniz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meR-aQ-xhh">
-                                        <rect key="frame" x="0.0" y="0.0" width="128" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sDO-PG-cYz">
-                                        <rect key="frame" x="0.0" y="50.5" width="128" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Kilonuzu Giriniz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0z-vj-Dcs">
-                                        <rect key="frame" x="0.0" y="114.5" width="128" height="20.5"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KwK-DU-e1C">
-                                        <rect key="frame" x="0.0" y="165" width="128" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
-                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sb9-tw-clZ">
+                                        <rect key="frame" x="0.0" y="0.0" width="354" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Boyunuzu Giriniz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="meR-aQ-xhh">
+                                                <rect key="frame" x="0.0" y="0.0" width="330" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2,0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TDn-oM-QYo">
+                                                <rect key="frame" x="330" y="0.0" width="24" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="2" minValue="0.5" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="SOd-4v-MKN">
+                                        <rect key="frame" x="-2" y="50.5" width="358" height="31"/>
+                                        <connections>
+                                            <action selector="HSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="hmw-A2-pKh"/>
+                                        </connections>
+                                    </slider>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hkO-Le-qoE">
+                                        <rect key="frame" x="0.0" y="110.5" width="354" height="20.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Kilonuzu Giriniz" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I0z-vj-Dcs">
+                                                <rect key="frame" x="0.0" y="0.0" width="333" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="80" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="16V-AX-MPy">
+                                                <rect key="frame" x="333" y="0.0" width="21" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="80" minValue="30" maxValue="150" translatesAutoresizingMaskIntoConstraints="NO" id="8fe-5l-ccj">
+                                        <rect key="frame" x="-2" y="161" width="358" height="31"/>
+                                        <connections>
+                                            <action selector="WSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="QyZ-fF-Q2W"/>
+                                        </connections>
+                                    </slider>
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ELD-x9-0p3">
-                                <rect key="frame" x="142.5" y="423" width="129" height="20.5"/>
+                                <rect key="frame" x="142.5" y="415" width="129" height="20.5"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="BMI oranınız:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pv4-hV-6f8">
                                         <rect key="frame" x="0.0" y="0.0" width="98.5" height="20.5"/>
@@ -81,13 +105,17 @@
                             <constraint firstItem="7H5-qN-DKs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ZJv-oU-erR"/>
                             <constraint firstItem="XZq-x0-lhg" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="c1g-fS-pXn"/>
                             <constraint firstItem="ELD-x9-0p3" firstAttribute="top" secondItem="XZq-x0-lhg" secondAttribute="bottom" constant="100" id="ldC-2N-npO"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="XZq-x0-lhg" secondAttribute="trailing" constant="30" id="nhj-TX-qoh"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7H5-qN-DKs" secondAttribute="bottom" constant="150" id="qYe-j5-GXf"/>
+                            <constraint firstItem="XZq-x0-lhg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="ymy-hj-04H"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="bmiLabel" destination="5ac-Bh-ud6" id="ghs-U4-IhJ"/>
-                        <outlet property="heightLabel" destination="sDO-PG-cYz" id="9gV-XG-yvB"/>
-                        <outlet property="weightLabel" destination="KwK-DU-e1C" id="rE4-Lk-HpH"/>
+                        <outlet property="heightLabel" destination="TDn-oM-QYo" id="oyQ-Zf-cPC"/>
+                        <outlet property="heightSlider" destination="SOd-4v-MKN" id="fzk-1w-6XH"/>
+                        <outlet property="weightLabel" destination="16V-AX-MPy" id="iMe-Ps-B0a"/>
+                        <outlet property="weightSlider" destination="8fe-5l-ccj" id="oJO-nL-JW1"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
